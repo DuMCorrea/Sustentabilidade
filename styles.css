@@ -1,0 +1,983 @@
+/* Reset básico */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fonte */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a altura total da tela */
+    
+    
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 150px; /* Tamanho pequeno da logo */
+    height: auto;
+    display: block;
+    margin-right: 20px; /* Espaçamento à direita da logo */
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+/* Estilo do botão de contato */
+.btn-contato {
+    margin-top: -30px; /* Ajuste esse valor conforme necessário */
+    margin-left: 1500px;
+    cursor: pointer;
+   
+}
+
+.btn-contato button {
+    padding: 0.5rem 1rem; /* Reduz o tamanho do botão */
+    font-size: 1rem; /* Ajusta o tamanho da fonte para ser consistente com os outros itens */
+    font-weight: bold;
+    background-color: transparent; /* Mesma cor que os outros itens do header */
+    color: white; /* Cor do texto branca */
+    border: 2px solid white; /* Borda branca para manter consistência com o header */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    
+}
+
+.btn-contato button:hover {
+    background-color: white; /* Cor de fundo branca ao passar o mouse */
+    color: #4CAF50; /* Cor do texto muda para verde ao passar o mouse */
+ 
+}
+
+/* FORMULARIO */
+
+section.formulario {
+    padding: 50px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.11);
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+section.formulario h2 {
+    padding: 20px;
+    font-size: 50px;
+    margin-bottom: 10px; /* Ajusta o espaçamento abaixo do título */
+}
+
+section.formulario .subtitulo {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 30px; /* Espaçamento entre o subtítulo e o formulário */
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color:white;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form input[type="text"], 
+form input[type="email"],
+form textarea {
+    color: #4CAF50; /* Verde para o texto do usuário */
+}
+
+form textarea {
+    resize: none;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 150px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: static;
+    margin-right: 200px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Menu suspenso */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Seções principais */
+main {
+    padding: 0.8rem 1rem 1rem 1rem;
+    flex:1;
+}
+
+
+/* Estilos específicos para a página Home */
+.home-page main {
+    padding: 2.8rem 1rem 1rem 1rem;
+    flex:1;
+}
+
+
+main section {
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+/* Estilo específico para a seção de introdução na página Home */
+#introducao .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#introducao .texto {
+    flex: 1;
+}
+
+#introducao h1 {
+    color: #4CAF50; /* Cor verde predominante */
+    font-size: 3.0em;
+    margin-bottom: 10px;
+}
+
+#introducao p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#introducao .imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#introducao .imagem img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.3rem 0; /* Altura do footer ajustada */
+    position: relative;
+    width: 100%;
+  
+   
+   
+}
+
+
+
+
+/* Seção 'O que é Sustentabilidade' */
+#what-is-sustainability {
+    text-align: center; /* Centralizar o conteúdo */
+    margin: 2rem 0;
+}
+
+#what-is-sustainability > h2 {
+    font-size: 1.1em; /* Tamanho do título h2 igual ao do título Introdução */
+    color: #4CAF50; /* Cor verde predominante */
+}
+
+#what-is-sustainability .highlight-title {
+    color: #4CAF50; /* Cor verde predominante igual ao título 'Introdução' */
+    font-size: 3.0em; /* Tamanho igual ao título 'Introdução' */
+}
+
+#what-is-sustainability .highlight {
+    color: #2f612f; /* Cor azul para destacar a palavra 'Sustentabilidade' */
+    font-size: 5.0em; /* Tamanho maior para a palavra destacada */
+    margin-left: 0.2em; /* Adiciona espaço à esquerda da palavra destacada */
+   
+}
+
+#what-is-sustainability p {
+    font-size: 20px; /* Tamanho da fonte do parágrafo */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 1rem auto;
+    text-align: justify; /* Justificar o texto */
+}
+
+/* Sequência de imagens */
+.image-sequence {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 5rem; /* Espaçamento entre as imagens */
+    margin-top: 2rem; /* Espaçamento acima da sequência de imagens */
+}
+
+.image-sequence img {
+    width: 350px; /* Tamanho médio das imagens */
+    height: 230px; /* Mantém a proporção das imagens */
+    border-radius: 8px; /* Borda arredondada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para o hover */
+    margin-bottom: 100px;
+    margin-top: 30px;
+    
+}
+
+.image-sequence img:hover {
+    transform: scale(1.1); /* Aumenta a imagem no hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona sombra no hover */
+}
+
+
+
+/* Estilo para a imagem centralizada */
+.centered-image {
+    text-align: center;
+    margin: 2rem 0; /* Espaçamento em cima e embaixo da imagem */
+}
+
+.centered-image img {
+    width: 18%;
+    height: auto; /* Garante que a imagem se ajuste responsivamente */
+}
+
+
+
+/* Seção 'Os principais benefícios da sustentabilidade' */
+#benefits {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+#benefits > h2 {
+    font-size: 1.2em; /* Tamanho do título h2 igual ao do título Introdução */
+    color: #4CAF50; /* Cor verde predominante */
+}
+
+#benefits .highlight-benefits {
+    color: #4CAF50; /* Cor verde predominante igual ao título 'Introdução' */
+    font-size: 3.0em; /* Tamanho igual ao título 'Introdução' */
+}
+
+#benefits .benefits {
+    color: #2f612f; /* Cor azul para destacar a palavra 'Sustentabilidade' */
+    font-size: 5.0em; /* Tamanho maior para a palavra destacada */
+    margin-left: 0.2em; /* Adiciona espaço à esquerda da palavra destacada */
+}
+
+
+
+#benefits > p {
+    font-size: 1.4em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 1rem auto;
+    text-align: justify; /* Justificar o texto */
+}
+
+#benefits ul {
+    list-style-type: disc;
+    margin: 1rem auto;
+    padding-left: 20px;
+    max-width: 800px;
+    text-align: left;
+}
+
+#benefits ul li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+
+/* Página 5R's */
+
+
+/* Estilos globais */
+
+
+/* Estilos para a página dos 5 R's */
+
+/* Estilos para a imagem grande */
+#imagem-grande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 2.9rem;
+}
+
+#imagem-grande img {
+    width: 35%;
+    height: 35%;
+    height: auto;
+    border-radius: 10px;
+}
+#educacao-ambiental {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#educacao-ambiental h1 {
+    color: #4CAF50; /* Cor verde predominante */
+    font-size: 3.0em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#educacao-ambiental p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    text-align: justify;
+}
+
+/* Menu interativo */
+.menu-rs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.menu-rs button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-rs button:hover {
+    background-color: #388E3C;
+}
+
+/* Estilos para a exibição do conteúdo dos 5 R's */
+.conteudo-r {
+    display: none;
+    margin-top: 2rem;
+    margin-bottom: -0.6rem;
+    text-align: center;
+}
+
+.conteudo-r.active {
+    display: block;
+}
+
+.conteudo-r img {
+    width: 15%;
+    height: 50%;
+    margin-bottom: 1.3rem;
+    margin-top: 0.1rem;
+    border-radius: 10px;
+}
+
+#educacao-ambiental .conteudo-r > p {
+    font-size: 1.1em; /* Por exemplo */
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+
+/* Página Tripé */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos para a seção Tripé da Sustentabilidade */
+#tripe-sustentabilidade {
+    text-align: center;
+    padding: 20px;
+}
+
+#tripe-sustentabilidade h1 {
+    font-size: 3em; /* Aumenta o tamanho da fonte do título */
+    color: #4CAF50; /* Cor verde predominante */
+    margin-bottom: 1rem;
+}
+
+#tripe-sustentabilidade > p {
+    text-align: justify; /* Mantém o parágrafo justificado */
+    max-width: 800px;
+    margin: 0 auto 20px; /* Centraliza o parágrafo */
+    font-size: 1.2em;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens no topo */
+    justify-content: space-between;
+    margin: 20px 20px -51px 20px;
+}
+
+.pilares-esquerda {
+    width: 25%; /* Ajuste a largura conforme necessário */
+    margin-top: -200px;
+}
+
+.pilares-direita {
+    width: 25%; /* Ajuste a largura conforme necessário */
+    
+   
+}
+
+.pilares-esquerda .pilar:first-child {
+    margin-bottom: 70px; /* Aumenta o espaçamento entre Pilar 1 e Pilar 2 */
+}
+
+.imagem {
+    width: 45%; /* Ajuste o tamanho conforme necessário */
+    height: 45%;
+    text-align: center;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+}
+
+.pilar {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px 20px 40px 20px;
+}
+
+.pilar h2 {
+    text-align: center;
+    color: #2E8B57; /* Cor verde predominante */
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.pilar h3 {
+    text-align: center;
+    color: #6B8E23; /* Cor para o subtítulo */
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.pilar p {
+    text-align: justify;
+    color: #333;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+
+/* Seção 'Sobre Nós' */
+
+
+#sobre-nos {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f4f4f4;
+}
+
+#sobre-nos h1 {
+    font-size: 2.9em;
+    color: #4CAF50;
+    margin-bottom: 1.0rem;
+    margin-top: -10px;
+}
+
+#sobre-nos > p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    text-align: justify;
+}
+
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: -70px;
+    margin-top: 10px ;
+}
+
+.integrante {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 3.5rem 3.0rem 3,5rem 3.5rem ;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.integrante img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    object-fit: cover;
+}
+
+.integrante h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.integrante > p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 0.6rem;
+   align-items: center;
+}
+
+.redes-sociais {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espaçamento entre as logos */
+}
+
+.redes-sociais img {
+    width: 30px; /* Ajuste do tamanho das logos */
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+
+/* Página Reciclagem */
+
+
+
+#reciclagem h1 {
+    margin-top: 15px;
+    font-size: 3em; /* Aumenta o tamanho da fonte */
+    color: #4CAF50; /* Cor do título */
+}
+
+.description {
+    margin: 20px 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.image-container {
+    margin: 15px 0;
+}
+
+.info-container {
+    margin-top: 20px;
+    margin-right: 350px;
+    margin-left: 350px;
+    padding: 20px 20px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    display: none;
+}
+
+.centered-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.centered-content h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.centered-content .description {
+    margin-bottom: 40px;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.centered-content .image-container {
+    max-width: 100%;
+}
+
+.centered-content .image-container img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: 400px;
+}
+
+.click-message {
+    margin-top: 20px;
+    font-size: 1.9em;
+    color: #333;
+    text-align: center;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+/* Página Educaão Ambiental */
+
+.containerExemplos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.containerExemplos h1 {
+    font-size: 3.0rem;
+    color: #4CAF50; /* cor verde predominante */
+    margin-bottom: 20px;
+}
+
+.containerExemplos p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 900px;
+    text-align: justify;
+}
+
+/* Ajuste para 10 cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 20px; /* Espaço entre o parágrafo e os cards */
+    max-width: 60%; /* Ajusta a largura do contêiner */
+    padding: 0 15px; /* Adiciona espaçamento interno */
+    margin-left: 350px;
+}
+
+/* Ajuste no tamanho dos cards */
+.card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 190px;
+    height: 250px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Para garantir que o conteúdo não transborde */
+}
+
+.card img {
+    border-radius: 10px;
+    width: 70%;
+    height: 50%;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    transition: opacity 0.3s ease-in-out; /* Transição suave para opacidade */
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    color: #4CAF50;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+    display: none; /* Inicialmente oculto */
+}
+
+.btn-saiba-mais {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #45a049;
+}
+
+.card.expandido img {
+    display: none; /* Remove a imagem */
+}
+
+.card.expandido h2 {
+   margin-top: 10px;
+    margin-bottom: 20px; /* Reduz a margem inferior do título */
+}
+
+.card.expandido p {
+    display: block; /* Mostra a descrição */
+    text-align: center;
+    margin-top: -10px; /* Ajusta o espaçamento superior da descrição */
+}
+
+
+.card.expandido .btn-saiba-mais {
+    display: none; /* Oculta o botão "Saiba Mais" */
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+/* Página Notícias */
+
+#noticias-introducao h1 {
+    font-size: 3.0em;
+    color: #4CAF50;
+    margin-bottom: 1.0rem;
+    margin-top: 10px;
+    text-align: center; /* Adicionado para centralizar o título */
+    margin-right: 30px;
+}
+
+#noticias-introducao p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 0rem auto;
+    text-align: justify;
+}
+
+#noticias-filtro {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.filtro-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.filtro-btn:hover {
+    background-color: #45a049;
+}
+
+/* Esconde as seções de notícias por padrão */
+.noticias-lista {
+    display: none;
+}
+
+/* Exibe as seções de notícias ativas */
+.noticias-lista.active {
+    display: flex;
+}
+
+/* Ajustes para exibir imagens corretamente */
+.noticias-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Ajuste para espaçamento consistente entre as imagens */
+    justify-content: center; /* Centraliza as imagens na linha */
+    margin-bottom: -9px;
+}
+
+.imagem-noticia {
+    width: 90%; /* Ajusta a largura das imagens para 90% do contêiner */
+    height: auto;
+    object-fit: cover; /* Mantém a proporção das imagens e cobre o contêiner */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagem-noticia:hover {
+    transform: scale(1.05);
+}

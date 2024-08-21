@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclagem - Site de Sustentabilidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/LogoSust.png" alt="Logo do Site de Sustentabilidade">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categorias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="reciclagem.html">Reciclagem</a></li>
+                        <li><a href="5 R's.html">Os 5 R's</a></li>
+                        <li><a href="tripe.html">Tripé da Sustentabilidade</a></li>
+                        <li><a href="educacaoAmbiental.html">Educação Ambiental</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+            </ul>
+            <div class="btn-contato">
+                <a href="contato.html"><button>Contato</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reciclagem">
+            <div class="centered-content">
+                <h1>Reciclagem</h1>
+                <p class="description">A reciclagem é essencial para reduzir o impacto ambiental dos resíduos que produzimos. Ela permite transformar materiais descartados em novos produtos, conservando recursos naturais e reduzindo a poluição. Vamos entender como reciclar de forma eficiente e os tipos de materiais recicláveis.</p>
+                <div class="image-container">
+                    <img src="assets/Lixeiras.png" alt="Lixeiras Recicláveis" usemap="#lixeirasMap">
+                    <map name="lixeirasMap">
+                        <!-- Ajustar o retângulo para a área de Papel -->
+                        <area shape="rect" coords="18,20,115,200" href="#" alt="Papel" onclick="showContent('papel')">
+                        <!-- Ajustar o retângulo para a área de Plástico -->
+                        <area shape="rect" coords="145,20,245,200" href="#" alt="Plástico" onclick="showContent('plastico')">
+                        <!-- Ajustar o retângulo para a área de Vidro -->
+                        <area shape="rect" coords="280,20,375,200" href="#" alt="Vidro" onclick="showContent('vidro')">
+                        <!-- Ajustar o retângulo para a área de Metal -->
+                        <area shape="rect" coords="420,20,510,200" href="#" alt="Metal" onclick="showContent('metal')">
+                        <!-- Ajustar o retângulo para a área de Orgânico -->
+                        <area shape="rect" coords="550,20,645,200" href="#" alt="Orgânico" onclick="showContent('organico')">
+                        <!-- Ajustar o retângulo para a área de Não Reciclável -->
+                        <area shape="rect" coords="685,20,780,200" href="#" alt="Não Reciclável" onclick="showContent('naoReciclavel')">
+                    </map>
+                </div>
+
+                <!-- Adicionando a mensagem abaixo da imagem -->
+    <p class="click-message">Clique em uma das lixeiras para entender um pouco mais sobre cada uma delas!</p>
+                <div id="conteudo-reciclagem">
+                    <div class="info-container" id="papel">
+                        <p>Papel é um dos materiais mais amplamente recicláveis, desempenhando um papel crucial na preservação do meio ambiente. A reciclagem do papel ajuda a salvar árvores, economizar água e energia, e reduzir a quantidade de resíduos que acabam em aterros sanitários. Para garantir uma reciclagem eficaz, separe papéis limpos, secos e sem resíduos de alimentos ou graxa. Exemplos incluem jornais, revistas, folhas de papel, caixas de papelão e papel de escritório.</p>
+                    </div>
+                
+                    <div class="info-container" id="plastico">
+                        <p>O plástico é um material extremamente versátil, presente em diversos produtos do nosso dia a dia. No entanto, quando descartado de forma inadequada, ele pode se tornar um grande poluente, prejudicando o meio ambiente e a vida marinha. Recicle plásticos limpos e secos, como garrafas PET, embalagens de alimentos e sacolas plásticas, para ajudar a reduzir a poluição. Lembre-se de remover tampas e rótulos, e, quando possível, aplastar os recipientes para economizar espaço.</p>
+                    </div>
+                
+                    <div class="info-container" id="vidro">
+                        <p>O vidro é um dos poucos materiais que podem ser reciclados infinitamente sem perder a qualidade. Reciclar vidro é uma maneira eficaz de reduzir o consumo de recursos naturais e a poluição. Para uma reciclagem bem-sucedida, é importante separar os vidros por cor (transparente, verde, marrom) e evitar misturá-los com outros materiais, como metais ou cerâmicas. Recicle garrafas, frascos, potes e vidros de conserva, mas lembre-se de remover tampas e rótulos.</p>
+                    </div>
+                
+                    <div class="info-container" id="metal">
+                        <p>Metais como alumínio, aço e cobre são recursos valiosos e altamente recicláveis, o que ajuda a conservar recursos naturais e economizar energia. A reciclagem de metais reduz significativamente a necessidade de extração de minérios, além de diminuir a poluição do ar e da água. Separe latas de alumínio, embalagens de aço, tampas metálicas e utensílios de metal para reciclagem. Certifique-se de que estejam limpos e secos antes de descartar.</p>
+                    </div>
+                
+                    <div class="info-container" id="organico">
+                        <p>Resíduos orgânicos, como restos de alimentos, cascas de frutas e verduras, podem ser reaproveitados através da compostagem, um processo natural que transforma esses resíduos em adubo rico em nutrientes. A compostagem é uma forma sustentável de reciclar materiais orgânicos, reduzindo a quantidade de resíduos enviados para aterros sanitários e ajudando a enriquecer o solo para o cultivo de plantas. Separe cascas de ovos, borra de café, restos de vegetais e alimentos não processados para compostagem.</p>
+                    </div>
+                
+                    <div class="info-container" id="naoReciclavel">
+                        <p>Materiais não recicláveis incluem itens que, devido à sua composição ou contaminação, não podem ser processados pelos sistemas de reciclagem. Esses materiais devem ser descartados corretamente para evitar a contaminação de recicláveis e a poluição do meio ambiente. Exemplos de resíduos não recicláveis incluem papel higiênico, fraldas, absorventes, cerâmicas, espelhos e lâmpadas. Sempre que possível, tente reduzir o uso desses materiais e busque alternativas mais sustentáveis.</p>
+                    </div>
+                </div>                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Site de Sustentabilidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="reciclagem.js"></script>
+</body>
+</html>

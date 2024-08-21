@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Site de Sustentabilidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/LogoSust.png" alt="Logo do Site de Sustentabilidade">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categorias</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="reciclagem.html">Reciclagem</a></li>
+                        <li><a href="5 R's.html">Os 5 R's</a></li>
+                        <li><a href="tripe.html">Tripé da Sustentabilidade</a></li>
+                        <li><a href="educacaoAmbiental.html">Educação Ambiental</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+            </ul>
+            <div class="btn-contato">
+                <a href="contato.html"><button>Contato</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="noticias-introducao">
+            <div class="container">
+                <h1>Notícias</h1>
+                <p>
+                    Fique por dentro das últimas novidades e informações sobre sustentabilidade. Aqui você encontrará notícias atualizadas sobre iniciativas, eventos e avanços relacionados ao meio ambiente, economia sustentável e práticas sociais que estão moldando um futuro mais verde e responsável.
+                </p>
+            </div>
+        </section>
+    
+        <!-- Filtro de Notícias -->
+        <section id="noticias-filtro">
+            <div class="container">
+                <button class="filtro-btn" data-filter="brasil">Notícias do Brasil</button>
+                <button class="filtro-btn" data-filter="mundo">Notícias do Mundo</button>
+            </div>
+        </section>
+    
+        <!-- Seção de Notícias com Imagens -->
+        <section id="noticias-conteudo">
+            <div class="container noticias-grid">
+                <div class="noticias-lista brasil" data-category="brasil">
+                    <!-- Notícias do Brasil -->
+                    <a href="https://portalsustentabilidade.com/2024/08/17/estudo-da-iema-mostra-que-e-possivel-integrar-a-crescente-energia-renovavel-a-atual-matriz-eletrica-brasileira/" target="_blank">
+                        <img src="assets/5.png" alt="Imagem Brasil 1" class="imagem-noticia">
+                    </a>
+                    <a href="https://portalsustentabilidade.com/2024/08/09/bndes-e-eneva-apoiam-recuperacao-florestal-em-quatro-unidades-de-conservacao-no-amazonas/" target="_blank">
+                        <img src="assets/2.png" alt="Imagem Brasil 2" class="imagem-noticia">
+                    </a>
+                    <a href="https://portalsustentabilidade.com/2024/08/02/cetesb-adota-novo-procedimento-para-gerenciamento-de-areas-contaminadas/" target="_blank">
+                        <img src="assets/3.png" alt="Imagem Brasil 3" class="imagem-noticia">
+                    </a>
+                </div>
+                <div class="noticias-lista mundo" data-category="mundo">
+                    <!-- Notícias do Mundo -->
+                    <a href="https://portalsustentabilidade.com/2024/06/25/startup-ucraniana-transforma-folhas-mortas-em-papel-reduzindo-o-impacto-ambiental/" target="_blank">
+                        <img src="assets/6.png" alt="Imagem Mundo 1" class="imagem-noticia">
+                    </a>
+                    <a href="https://portalsustentabilidade.com/2024/07/29/onu-abre-inscricoes-para-programa-de-bolsas-de-estudo-sobre-oceanos-e-legislacao-maritima/" target="_blank">
+                        <img src="assets/4.png" alt="Imagem Mundo 2" class="imagem-noticia">
+                    </a>
+                    <a href="https://portalsustentabilidade.com/2024/07/30/colombia-implementa-lei-para-reduzir-consumo-de-plasticos-de-uso-unico/" target="_blank">
+                        <img src="assets/1.png" alt="Imagem Mundo 3" class="imagem-noticia">
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Site de Sustentabilidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="noticias.js"></script>
+</body>
+</html>
